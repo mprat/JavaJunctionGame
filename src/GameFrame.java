@@ -17,7 +17,6 @@ public class GameFrame extends JFrame{
 	//create components in the frame
 	private JLabel label = new JLabel("This is a test label.");
 	private JButton oneButton = new JButton("This is a button.");
-	private int numClicks = 0;
 		
 	
 	public GameFrame(){
@@ -42,10 +41,5 @@ public class GameFrame extends JFrame{
 	//MAIN METHODSimpleFrame
 	public static void main(String[] args) {
 		GameFrame test = new GameFrame();
-	}
-
-	public void actionPerformed(ActionEvent e) {
-		numClicks++;
-		oneButton.setText("Button clicked " + numClicks + " times");
 	}
 }
